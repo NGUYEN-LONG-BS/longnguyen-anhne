@@ -220,7 +220,7 @@ header {
 }
 
 .banner__heading {
-  max-width: 300px;
+  max-width: 450px;
   margin: 0 auto;
   text-align: center;
   color: var(--gray);
