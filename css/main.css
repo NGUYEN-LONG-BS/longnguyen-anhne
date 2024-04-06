@@ -79,8 +79,10 @@ header {
 
 /* logo */
 .navbar__logo img {
-  width: 57px;
-  height: 57px;
+  /* width: 57px;
+  height: 57px; */
+  width: 100px;
+  height: 100px;
   object-fit: cover;
 }
 
