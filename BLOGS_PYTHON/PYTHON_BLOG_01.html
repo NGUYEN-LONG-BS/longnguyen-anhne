@@ -1,0 +1,40 @@
+PYTHON BLOG 01 - Tạo giao diện cửa sổ người dùng trên Window đầu tiền		
+1. Cài đặt pyqt6, pyqt6-tools, pyqt5designer		https://www.youtube.com/watch?v=Vt93b-U_Pr0&list=PLWBrqglnjNl3Rvi-Duqpp1V7bUokQZ3Eu&index=1
+pip install pyqt6		https://mcivietnam.com/blog-detail/python-gui-va-06-thu-vien-python-gui-tot-nhat/
+pip install pyqt6-tools		https://www.unite.ai/vi/10-th%C6%B0-vi%E1%BB%87n-python-t%E1%BB%91t-nh%E1%BA%A5t-cho-gui/
+pip install pyqt5designer		
+2. Thiết kế cửa sổ giao diện đầu tiên với pyqt5designer		https://www.youtube.com/watch?v=lrrgZrtSSSE&list=PLWBrqglnjNl3Rvi-Duqpp1V7bUokQZ3Eu&index=2
+Thiết kế giao diện với PYDesigner		
+Thiết kế các label		
+Thiết kế các plain text		
+Thiết kế các button		
+Lệnh chuyển File .ui thành .py:		https://laptrinhcanban.com/python/nhap-mon-lap-trinh-python/dong-goi-chuong-trinh-python/dong-goi-chuong-trinh-python-pyinstaller/
+cd C:\Users\QuanN\OneDrive\Desktop\BLOG_PYTHON_01		
+pyuic6 -x MODULE_SQL_CONNECTING.ui -o MODULE_SQL_CONNECTING.py		
+3. Chuyển thiết kế thành đuôi .exe, có thể chạy trên mọi máy tính windown khác		https://www.youtube.com/watch?v=lrrgZrtSSSE&list=PLWBrqglnjNl3Rvi-Duqpp1V7bUokQZ3Eu&index=2
+pip install pyinstaller		
+pyinstaller --onefile MODULE_SQL_CONNECTING.py		
+4. Các lỗi có thể có		
+ModuleNotFoundError: No module named 'PyQt6'	"To solve your problem, you can try uninstalling the pakage and then re-installing it again. Doing so often fixes the problem
+
+To uninstall
+
+pip uninstall PyQt6
+
+To re-install
+
+pip install PyQt6
+
+If you don't have pip installed, which is very unlikely then you can install it with the following code
+
+For linux
+
+sudo apt install pip
+
+For windows I believe you can run the following code to download or upgrade your pip.
+
+python get-pip.py
+
+You might need to specify the python version you are using.
+
+If the problem is still there. Then it is quite possible that the problem is with the IDE you are using. Sometimes pakages don't work or show error when run is because of the virtual path of the IDE. It is possible that your IDE may not be installed in the same directory or folder as your python files or vice versa. I have had similar problems with pygame, numpy etc in VSC, so now i use Thonny to run my code."	
