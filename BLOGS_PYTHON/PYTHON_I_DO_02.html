@@ -1,10 +1,13 @@
 
 <P>Đề bài:</P>
 <P>Chúng ta có cơ sở dữ liệu SQL Server, chúng ta cần lấy dữ liệu từ bảng TB_DS_DATABASE ra file Excel (đường link tuỳ chỉnh)</P>
+<P>
 <code>
     import pyodbc
+
     conn = pyodbc.connect('Server=KSNB3\SQLEXPRESS;Database=DATABASE_USER_ID;Trusted_Connection=True;PORT=1433;DRIVER={SQL Server}')
     cursor = conn.cursor()
+
     cursor.execute('Select * from TB_DS_DATABASE')
     rows = cursor.fetchall()
     # print(rows)
@@ -27,3 +30,4 @@
     print(df2)
     df2.to_excel(r'C:\Users\ADMIN\Desktop\OUTPUT.xlsx', index=False)
 </code>
+</P>
