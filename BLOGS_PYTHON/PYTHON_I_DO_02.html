@@ -1,0 +1,29 @@
+
+<P>Đề bài:</P>
+<P>Chúng ta có cơ sở dữ liệu SQL Server, chúng ta cần lấy dữ liệu từ bảng TB_DS_DATABASE ra file Excel (đường link tuỳ chỉnh)</P>
+<code>
+    import pyodbc
+    conn = pyodbc.connect('Server=KSNB3\SQLEXPRESS;Database=DATABASE_USER_ID;Trusted_Connection=True;PORT=1433;DRIVER={SQL Server}')
+    cursor = conn.cursor()
+    cursor.execute('Select * from TB_DS_DATABASE')
+    rows = cursor.fetchall()
+    # print(rows)
+    cursor.close()
+    conn.close()
+
+
+    import xlwings as xw    # Thư viện chuyên dùng để xử lý Excel
+    from openpyxl import load_workbook, Workbook
+    import pandas as pd
+
+    # Load in the workbook
+    # excel_path = 'C:\Users\ADMIN\Desktop\OUTPUT.xlsx'
+    df = pd.read_excel(r'C:\Users\ADMIN\Desktop\OUTPUT.xlsx')
+    # df = pd
+
+    # Convert the fetched rows to a DataFrame
+    # File Excel phải đang đóng
+    df2 = pd.DataFrame(rows)
+    print(df2)
+    df2.to_excel(r'C:\Users\ADMIN\Desktop\OUTPUT.xlsx', index=False)
+</code>
