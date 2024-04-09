@@ -291,10 +291,6 @@ header {
   margin-top: 15em;
 }
 
-@media (min-width: 62em) {
-
-}
-
 /* === Things === */
 #things {
   position: relative;
