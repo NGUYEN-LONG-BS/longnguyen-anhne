@@ -13,7 +13,7 @@
         />
         <!-- main css -->
         <link rel="stylesheet" href="../css/main.css" />
-        <title>PYTHON TUTORIAL</title>
+        <title>PYTHON I DO 02</title>
       </head>
       <body>
         <!-- overlay -->
@@ -45,35 +45,36 @@
             </nav>
           </div>
         </header>
+
         <!-- Bai_Viet -->
-        <section id="Bai_Viet"></section>
-        <P>Đề bài:</P>
-        <P>Chúng ta có cơ sở dữ liệu SQL Server, chúng ta cần lấy dữ liệu từ bảng TB_DS_DATABASE ra file Excel (đường link tuỳ chỉnh)</P>
-        <pre>
-          <code class="prettify">
-          import pyodbc
-          conn = pyodbc.connect('Server=KSNB3\SQLEXPRESS;Database=DATABASE_USER_ID;Trusted_Connection=True;PORT=1433;DRIVER={SQL Server}')
-          cursor = conn.cursor()
-          cursor.execute('Select * from TB_DS_DATABASE')
-          rows = cursor.fetchall()
-          # print(rows)
-          cursor.close()
-          conn.close()
-          import xlwings as xw    # Thư viện chuyên dùng để xử lý Excel
-          from openpyxl import load_workbook, Workbook
-          import pandas as pd
-          # Load in the workbook
-          # excel_path = 'C:\Users\ADMIN\Desktop\OUTPUT.xlsx'
-          df = pd.read_excel(r'C:\Users\ADMIN\Desktop\OUTPUT.xlsx')
-          # df = pd
-          # Convert the fetched rows to a DataFrame
-          # File Excel phải đang đóng
-          df2 = pd.DataFrame(rows)
-          print(df2)
-          df2.to_excel(r'C:\Users\ADMIN\Desktop\OUTPUT.xlsx', index=False)
-          </code>
-        </pre>
-        
+        <section id="Bai_Viet">
+          <P>Đề bài:</P>
+          <P>Chúng ta có cơ sở dữ liệu SQL Server, chúng ta cần lấy dữ liệu từ bảng TB_DS_DATABASE ra file Excel (đường link tuỳ chỉnh)</P>
+          <pre>
+            <code class="prettify">
+            import pyodbc
+            conn = pyodbc.connect('Server=KSNB3\SQLEXPRESS;Database=DATABASE_USER_ID;Trusted_Connection=True;PORT=1433;DRIVER={SQL Server}')
+            cursor = conn.cursor()
+            cursor.execute('Select * from TB_DS_DATABASE')
+            rows = cursor.fetchall()
+            # print(rows)
+            cursor.close()
+            conn.close()
+            import xlwings as xw    # Thư viện chuyên dùng để xử lý Excel
+            from openpyxl import load_workbook, Workbook
+            import pandas as pd
+            # Load in the workbook
+            # excel_path = 'C:\Users\ADMIN\Desktop\OUTPUT.xlsx'
+            df = pd.read_excel(r'C:\Users\ADMIN\Desktop\OUTPUT.xlsx')
+            # df = pd
+            # Convert the fetched rows to a DataFrame
+            # File Excel phải đang đóng
+            df2 = pd.DataFrame(rows)
+            print(df2)
+            df2.to_excel(r'C:\Users\ADMIN\Desktop\OUTPUT.xlsx', index=False)
+            </code>
+          </pre>
+        </section>
         <!-- footer -->
         <footer id="footer">
           <div class="container">
