@@ -20,13 +20,13 @@ img {
   width: 100%;
 }
 
-/* code {
+code {
   font-family: Consolas,"courier new";
-  color: crimson;
+  color: rgb(33, 20, 220);
   background-color: #f1f1f1;
   padding: 2px;
   font-size: 105%;
-} */
+}
 
 .container {
   max-width: 1200px;
@@ -214,7 +214,7 @@ header {
 
 /* === Banner === */
 #banner {
-  position: relative;
+  position: static;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -286,8 +286,9 @@ header {
 
 /* === Bai_Viet === */
 #BaiViet {
-  position: relative;
+  position: static;
   overflow-x: hidden;
+  margin-top: 15em;
 }
 
 /* === Things === */

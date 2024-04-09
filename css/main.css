@@ -328,6 +328,10 @@ header {
   padding-bottom: 4em;
 }
 
+.things__item a {
+  padding-bottom: 4em;
+}
+
 .things__item--heading {
   text-align: center;
   color: var(--gray);
