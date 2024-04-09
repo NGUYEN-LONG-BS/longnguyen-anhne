@@ -284,6 +284,13 @@ header {
   }
 }
 
+/* === Bai_Viet === */
+#BaiViet {
+  position: relative;
+  overflow-x: hidden;
+  margin-top: 15em;
+}
+
 /* === Things === */
 #things {
   position: relative;
