@@ -1,50 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-      <meta charset="UTF-8" />
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <!-- google font -->
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-      <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap"
-        rel="stylesheet"
-      />
-      <!-- main css -->
-      <link rel="stylesheet" href="PythonBlogs.css" />
-      <title>PYTHON I DO 02</title>
-    </head>
-    <body>
-      <!-- overlay -->
-      <section id="overlay"></section>
-      <!-- header -->
-      <header>
-        <div class="container">
-          <nav class="navbar">
-            <!-- logo -->
-            <div class="navbar__logo">
-              <a href="../index.html">
-                <img src="../img/logo.png" alt="website logo">
-              </a>
-            </div>
-            <!-- links -->
-            <ul class="navbar__links">
-              <li class="navbar__link"><a href="../ACCA.html">ACCA</a></li>
-              <li class="navbar__link"><a href="../CFA.html">CFA</a></li>
-              <li class="navbar__link"><a href="../VBA.html">VBA</a></li>
-              <li class="navbar__link"><a href="../python.html">PYTHON</a></li>
-              <li class="navbar__link"><a href="../python.html">SQL</a></li>
-              <li class="navbar__link"><a href="../JAVASCRIPT.html">JAVASCRIPT</a></li>
-              <a href="#footer"><button class="navbar__btn">Contact</button></a>
-            </ul>
-            <!-- menu button -->
-            <div class="navbar__icons">
-              <div class="navbar__icon"></div>
-            </div>
-          </nav>
-        </div>
-      </header>
+
       <!-- Bai_Viet -->
       <section id="BaiViet">
         <div>
@@ -77,50 +31,18 @@
           </pre>
         </div>
       </section>
-      <!-- footer -->
-      <footer id="footer">
-        <div class="container">
-          <!-- dec -->
-          <div class="footer__dec">
-            <img src="./img/things-dec-l.png" alt="illustration of leaf" />
-          </div>
-          <!-- img -->
-          <div class="footer__img">
-            <img src="./img/footer-img.png" alt="illustration of women" />
-          </div>
-          <!-- heading -->
-          <div class="footer__heading">
-            <h1>Ready to make something amazing?</h1>
-            <!-- contact -->
-            <div class="footer__contact">
-              <a href="tel:0932782603">
-                <i class="fas fa-phone-alt"></i>
-                <p>0932 782 603</p>
-              </a>
-              <a href="mailto:nguyenlongbs2012@gmail.com">
-                <i class="fas fa-envelope"></i>
-                <p>nguyenlongbs2012@gmail.com</p>
-              </a>
-            </div>
-            <div class="banner__socials">
-              <a href="#"><i class="fab fa-dribbble"></i></a>
-              <a href="#"><i class="fab fa-behance"></i></a>
-              <a href="#"><i class="fab fa-linkedin-in"></i></a>
-              <a href="https://www.facebook.com/nguyenlongbs"><i class="fab fa-facebook"></i></a>
-            </div>
-          </div>
-        </div>
-      </footer>
-      <!-- fontawesome -->
-      <script
-        src="https://kit.fontawesome.com/28c0af3030.js"
-        crossorigin="anonymous"
-      ></script>
-      <!-- main js -->
-      <script src="../js/main.js"></script>
-      <!-- format code -->
-      <!-- <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script> -->
-    </body>
-</html>
+
+      <P>When you use "Trusted_Connection=yes" both the UID and PWD keys are ignored and the Windows account is used for authentication.</P>
+      <P>If you want to use the UID and PWD values for authentication instead of the Windows NTLM account you must use "Trusted_Connection=No" or remove this option from the connection string.</P>
 
 
+      <P>slightly different syntax:</P>
+      <pre>
+        <code>conn = pyodbc.connect('Driver={SQL Server};'
+                                'Server=dbServer1;'
+                                'Database=db1;'
+                                'UID=user1;'
+                                'PWD=uSer1Pass!;'
+                                'Trusted_Connection=no;')
+        </code>
+      </pre>
