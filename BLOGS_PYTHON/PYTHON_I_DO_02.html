@@ -46,78 +46,30 @@
             </nav>
           </div>
         </header>
-        <!-- banner -->
-        <section id="banner">
-          <div class="container">
-            <!-- img -->
-            <div class="banner__img">
-              <img src="./img/banner-img.png" alt="my picture" />
-            </div>
-            <!-- heading -->
-            <div class="banner__heading">
-              <h1>Xin chào, mình là Long Nguyễn</h1>
-              <p>
-                Đây là nơi ghi chép các dự án, những hướng dẫn của mình về những điều mà mình đã học lỏm và sưu tầm khắp mọi nơi. 
-                Nếu có vấn đề gì về bản quyền, liên hệ mình nhé!
-              </p>
-              <a href="#"><button class="banner__btn">English Version</button></a>
-              <div class="banner__socials">
-                <a href="#"><i class="fab fa-dribbble"></i></a>
-                <a href="#"><i class="fab fa-behance"></i></a>
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://www.facebook.com/nguyenlongbs"><i class="fab fa-facebook"></i></a>
-                
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- things -->
-        <section id="things">
-          <div class="container">
-            <!-- dec -->
-            <div class="things__dec">
-              <img src="./img/things-dec-l.png" alt="illustration of leaf" />
-            </div>
-            <!-- dec -->
-            <div class="things__dec">
-              <img src="./img/things-dec-r.png" alt="illustration of leaf" />
-            </div>
-            <!-- heading -->
-            <h2>NƠI TẬP HỢP CÁC KIẾN THỨC - DỰ ÁN</h2>
-            <!-- item ACCA -->
-            <div class="things__item" id="works-ACCA">
-              <!-- img -->
-              <img src="./img/things-item-ACCA.png" alt="VBA image" />
-              <!-- text -->
-              <div class="things__item--heading">
-
-                <P>Đề bài:</P>
-                <P>Chúng ta có cơ sở dữ liệu SQL Server, chúng ta cần lấy dữ liệu từ bảng TB_DS_DATABASE ra file Excel (đường link tuỳ chỉnh)</P>
-                <P><code class="prettify">import pyodbc</code></P>
-                <P><code class="prettify">conn = pyodbc.connect('Server=KSNB3\SQLEXPRESS;Database=DATABASE_USER_ID;Trusted_Connection=True;PORT=1433;DRIVER={SQL Server}')</code></P>
-                <p><code class="prettify">cursor = conn.cursor()</code></p>
-                <p><code class="prettify">cursor.execute('Select * from TB_DS_DATABASE')</code></p>
-                <p><code class="prettify">rows = cursor.fetchall()</code></p>
-                <p><code class="prettify"># print(rows)</code></p>
-                <p><code class="prettify">cursor.close()</code></p>
-                <p><code class="prettify">conn.close()</code></p>
-                <p><code class="prettify">import xlwings as xw    # Thư viện chuyên dùng để xử lý Excel</code></p>
-                <p><code class="prettify">from openpyxl import load_workbook, Workbook</code></p>
-                <p><code class="prettify">import pandas as pd</code></p>
-                <p><code class="prettify"># Load in the workbook</code></p>
-                <p><code class="prettify"># excel_path = 'C:\Users\ADMIN\Desktop\OUTPUT.xlsx'</code></p>
-                <p><code class="prettify">df = pd.read_excel(r'C:\Users\ADMIN\Desktop\OUTPUT.xlsx')</code></p>
-                <p><code class="prettify"># df = pd</code></p>
-                <p><code class="prettify"># Convert the fetched rows to a DataFrame</code></p>
-                <p><code class="prettify"># File Excel phải đang đóng</code></p>
-                <p><code class="prettify">df2 = pd.DataFrame(rows)</code></p>
-                <p><code class="prettify">print(df2)</code></p>    
-                <P><code class="prettify">df2.to_excel(r'C:\Users\ADMIN\Desktop\OUTPUT.xlsx', index=False)</code></P>
-                    
-              </div>
-            </div>
-          </div>
-        </section>
+        
+        <P>Đề bài:</P>
+        <P>Chúng ta có cơ sở dữ liệu SQL Server, chúng ta cần lấy dữ liệu từ bảng TB_DS_DATABASE ra file Excel (đường link tuỳ chỉnh)</P>
+        <P><code class="prettify">import pyodbc</code></P>
+        <P><code class="prettify">conn = pyodbc.connect('Server=KSNB3\SQLEXPRESS;Database=DATABASE_USER_ID;Trusted_Connection=True;PORT=1433;DRIVER={SQL Server}')</code></P>
+        <p><code class="prettify">cursor = conn.cursor()</code></p>
+        <p><code class="prettify">cursor.execute('Select * from TB_DS_DATABASE')</code></p>
+        <p><code class="prettify">rows = cursor.fetchall()</code></p>
+        <p><code class="prettify"># print(rows)</code></p>
+        <p><code class="prettify">cursor.close()</code></p>
+        <p><code class="prettify">conn.close()</code></p>
+        <p><code class="prettify">import xlwings as xw    # Thư viện chuyên dùng để xử lý Excel</code></p>
+        <p><code class="prettify">from openpyxl import load_workbook, Workbook</code></p>
+        <p><code class="prettify">import pandas as pd</code></p>
+        <p><code class="prettify"># Load in the workbook</code></p>
+        <p><code class="prettify"># excel_path = 'C:\Users\ADMIN\Desktop\OUTPUT.xlsx'</code></p>
+        <p><code class="prettify">df = pd.read_excel(r'C:\Users\ADMIN\Desktop\OUTPUT.xlsx')</code></p>
+        <p><code class="prettify"># df = pd</code></p>
+        <p><code class="prettify"># Convert the fetched rows to a DataFrame</code></p>
+        <p><code class="prettify"># File Excel phải đang đóng</code></p>
+        <p><code class="prettify">df2 = pd.DataFrame(rows)</code></p>
+        <p><code class="prettify">print(df2)</code></p>    
+        <P><code class="prettify">df2.to_excel(r'C:\Users\ADMIN\Desktop\OUTPUT.xlsx', index=False)</code></P>
+        
         <!-- footer -->
         <footer id="footer">
           <div class="container">
